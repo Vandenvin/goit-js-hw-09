@@ -16,3 +16,26 @@ img {
   display: block;
   max-width: 100%;
 }
+
+button {
+  padding: 0.75em 1.75em;
+  display: inline-block;
+  line-height: 1;
+  font-weight: 500;
+  margin: 2em 0;
+  color: #fff;
+  background-color: #2a591d;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button[disabled],
+button[disabled]:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: not-allowed;
+  color: #000;
+}

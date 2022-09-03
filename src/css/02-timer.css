@@ -7,9 +7,14 @@
 input {
   width: 130px;
   padding: 10px;
+  border: 2px solid rgb(45, 193, 75);
+  box-shadow: 0 0 15px 4px rgba(60, 168, 66, 0.3);
+  border-radius: 10px;
+}
+
+input[disabled] {
   border: 2px solid rgb(196, 187, 187);
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
-  border-radius: 10px;
 }
 
 .timer {

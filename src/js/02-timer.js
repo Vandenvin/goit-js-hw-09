@@ -57,6 +57,7 @@ function onBtnStartClick() {
   Notify.info('Сountdown is started');
   btnStart.setAttribute('disabled', 'true');
   btnStop.removeAttribute('disabled');
+  inputDate.setAttribute('disabled', 'true');
 
   timerId = setInterval(() => {
     counter -= 1000;
@@ -72,6 +73,7 @@ function onBtnStartClick() {
       clearInterval(timerId);
       Notify.success('Сountdown completed successfully!');
       btnStop.setAttribute('disabled', 'true');
+      inputDate.removeAttribute('disabled');
       return;
     }
   }, 1000);
@@ -84,6 +86,7 @@ function onBtnStopClick() {
 
   btnStart.setAttribute('disabled', 'true');
   btnStop.setAttribute('disabled', 'true');
+  inputDate.removeAttribute('disabled');
 
   flatpickr(inputDate, options).destroy();
   flatpickr(inputDate, options);

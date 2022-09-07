@@ -34,4 +34,8 @@ function onSubmitClick(event) {
       });
     delay = delay + step;
   }
+
+  event.target.delay.value = '';
+  event.target.step.value = '';
+  event.target.amount.value = '';
 }
